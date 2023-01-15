@@ -19,14 +19,10 @@
 			background-position: 50% 50%;
             background-size: cover;
 
-            padding-left: 30px;
-
-			display: grid;
-			grid-template-rows: auto auto auto;
-            grid-template-columns: 1fr 20%;
+            font-size:x-large;
         }
         h1 {
-            font-size: 60px;
+            font-size: 80px;
             font-weight:900;
             padding-bottom: 10px;
             padding-top: 10px;
@@ -34,71 +30,107 @@
         p {
             font-size: large;
         }
+        #menu {
+            position: fixed;
+            top:0;
+            left:0;
+
+            width:100%;
+
+            padding-right: 30px;
+            padding-bottom: 5px;
+        
+            background-color: rgba(0, 0, 0, 0.6);
+
+        }
         #title {
-            grid-row: 1;
-            padding-left: 20px;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+        #main {
+            padding-left: 10px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
         }
         #left {
-            grid-row-start: 2;
-            grid-row-end: 4;
-            grid-column: 1;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-left: 15px;
+            width: 75%;
+            height: 100%;
         }
         #right {
-            grid-row: 2;
-            grid-column: 2;
-        }
-        #discord {
-            grid-row: 3;
-            grid-column: 2;
+            padding-left: 20px;
+            padding-right: 20px;
         }
         #bottom {
-            grid-row: 4;
-            grid-column-start: 1;
-            grid-column-end: 2;
+           
             height: 10%;
-            background-color: rgba(0, 0, 0, 0.6);
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            background-color: rgba(0, 200, 0, 0.6);
+          
             width: 100%;
         }
         .button {
-            width: auto;
-			height: 48px;
+            width: 15%;
+			height: 40px;
+            
+            margin: 4px;
 				
 			border-radius: 4px;
 			border: 0;
 
+            font-weight: 900;
 			text-decoration: none;
 			text-align: center;
-			line-height: 48px;
+			line-height: 40px;
 			transition-duration: 250ms;
 
             float: right;
         }
+        .button:hover {
+			filter: brightness(70%);
+			transition-duration: 200ms;
+		}
     </style>
 </head>
 <body>
+    <div id = "menu">
+        <a class="button", style="background: #ffffff22" href ="https://wiki.stellarica.net">Wiki</a>
+        <a class="button", style="background: #ffffff22" href ="https://discord.gg/sjMY88Wwf8">Discord</a>
+        <a class="button", style="background: #ffffff22" href ="https://github.com/Stellarica">GitHub</a>
+        <a class="button", style="background: #ffffff22" href ="https://repo.stellarica.net">Maven</a>
+    </div>
     <div id="title">
         <h1>Stellarica</h1>
     </div>
-    <div id="left">
-        <p>Test Text</p>
-        <p>More Test Text</p>
-    </div>
-    <div id = "right">
-        <br>
-        <a class="button", style="background: #222222" href ="https://github.com/Stellarica">GitHub</a>
-        <br>
-        <a class="button", style="background: #222222" href ="https://wiki.stellarica.net">Wiki</a>
-        <br>
-        <a class="button", style="background: #222222" href ="https://repo.stellarica.net">Maven</a>
-        <br>
-    </div>
-    <div id = "discord">
-        <iframe style="float: right" src="https://discord.com/widget?id=1038493335679156425&theme=dark" width="20%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <div id="main">
+        <div id="left">
+            <h3>Starships</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            </p>
+            <h3>Exploration</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            </p>
+            <h3>Combat</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+            </p>
+        </div>
+        <div id = "right">
+            <iframe src="https://discord.com/widget?id=1038493335679156425&theme=dark" width="100%" height="500px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
     </div>
     <div id = "bottom">
 
