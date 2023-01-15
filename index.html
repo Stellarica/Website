@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Stellarica</title>
+    <meta name="description" content="Stellarica Minecraft Server">
+    <meta name="keywords" content="stellarica minecraft space server">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        * {
+			color: #eee;
+			font-family: 'Questrial';
+			user-select: none;
+		}
+        body {
+			background: #000 url(resources/background.jpg);
+		
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+            background-size: cover;
+
+            padding-left: 30px;
+
+			display: grid;
+			grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr 20%;
+        }
+        h1 {
+            font-size: 60px;
+            font-weight:900;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        p {
+            font-size: large;
+        }
+        #title {
+            grid-row: 1;
+            padding-left: 20px;
+        }
+        #left {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column: 1;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+        }
+        #right {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        #discord {
+            grid-row: 3;
+            grid-column: 2;
+        }
+        #bottom {
+            grid-row: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 10%;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .button {
+            width: auto;
+			height: 48px;
+				
+			border-radius: 4px;
+			border: 0;
+
+			text-decoration: none;
+			text-align: center;
+			line-height: 48px;
+			transition-duration: 250ms;
+
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1>Stellarica</h1>
+    </div>
+    <div id="left">
+        <p>Test Text</p>
+        <p>More Test Text</p>
+    </div>
+    <div id = "right">
+        <br>
+        <a class="button", style="background: #222222" href ="https://github.com/Stellarica">GitHub</a>
+        <br>
+        <a class="button", style="background: #222222" href ="https://wiki.stellarica.net">Wiki</a>
+        <br>
+        <a class="button", style="background: #222222" href ="https://repo.stellarica.net">Maven</a>
+        <br>
+    </div>
+    <div id = "discord">
+        <iframe style="float: right" src="https://discord.com/widget?id=1038493335679156425&theme=dark" width="20%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <div id = "bottom">
+
+    </div>
+</body>
+</html>
